@@ -1,35 +1,32 @@
 # ReactJS Routing
 
-Run the following command to get a basic ReactJS application setup with Redux:
+Run the following command to get a basic ReactJS application setup with React Router:
 
 ```
 npx create-react-app my-app
 cd my-app
+npm install react-router-dom
 yarn start
 
 ```
 
-1. Setup Router Package
+The documentation for the react-router-dom module is at https://reacttraining.com/react-router/web/guides/quick-start
 
-```
-npm install react-router-dom
-```
+1. Setup Routes
 
-2. Setup Routes
-
-* Create 2 components in separate JS files
+* Create 2 components in separate JS files within the my-app/src folder
 
 * Setup the Router to use / for the App.js and 2 other paths for the 2 components created.
 
 * Try in the browser to confirm that it is working.
 
-3. Use Props for routes
+2. Use Props for routes
 
 * Modify one of the routes to include an ID as part of the URL
 
 * Display the ID when that route is viewed by getting it from the props.
 
-4. Parsing Query Parameter
+3. Parsing Query Parameter
 
 * Print the query string in the other component from the props available.
 
@@ -37,15 +34,7 @@ npm install react-router-dom
 
 * Use the query-string to get each query parameter separately.
 
-5. Parsing URL Fragment
-
-* Add content to one of the components with several anchor tags
-
-* Install https://github.com/rafrex/react-router-hash-link
-
-* Set it up so that it will do a smooth scroll to the elements
-
-6. Navigating on Link Click
+4. Navigating on Link Click
 
 * Modify the Router to have Links for the 3 routes at the top of the page
 
